@@ -1,3 +1,7 @@
+from bot.database.main import engine, Base
+
+
 def register_models() -> None:
-    # todo: register models
-    pass
+    Base.metadata.create_all(engine)
+
+
